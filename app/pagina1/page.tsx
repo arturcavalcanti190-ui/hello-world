@@ -4,6 +4,7 @@ export default function Pagina1() {
   return (
     <div style={{ backgroundColor: "blue", height: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "30px" }}>
       <img src="/next.svg" alt="Imagem" style={{ width: "200px" }} />
+      <p style={{ color: "white", fontSize: "20px" }}>{process.env.NEXT_PUBLIC_MENSAGEM}</p>
       <Link href="/pagina2" style={{ backgroundColor: "white", color: "blue", padding: "10px 20px", borderRadius: "8px", fontWeight: "bold" }}>
         Ir para a Página 2
       </Link>
